@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "./Contact.css"
 
-export default function Desc() {
+export default function Contact() {
     return (
         <div>
             <Navbar color="red"></Navbar>
