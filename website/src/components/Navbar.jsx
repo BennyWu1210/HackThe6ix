@@ -8,7 +8,8 @@ export default function Navbar() {
       <div className="main">
         <a href="/">
           <img
-            src={"../../public/Logo.png"}
+            className="logo"
+            src={require("../../public/Logo.png")}
             alt="logo should be here"
           />
         </a>
