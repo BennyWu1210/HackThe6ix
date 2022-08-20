@@ -29,6 +29,7 @@
 }
 
 .home-page{
+  overflow-x: hidden;
   background-color: var(--blue);
   height: auto;
   padding: 50px 100px;
