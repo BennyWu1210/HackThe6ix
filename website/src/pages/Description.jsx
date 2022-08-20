@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./Desc.css"
+import "./Description.css"
 
 export default function Desc() {
     return (
