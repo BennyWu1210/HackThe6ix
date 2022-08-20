@@ -1,0 +1,26 @@
+.home-container{
+  background-color: var(--orange);
+  height: 100vh;
+}
+
+.home-hero{
+  display: flex;
+  margin: 50px 100px;
+  justify-content: space-around
+}
+
+.home-title{
+  font-weight: 500;
+  font-size: 100px;
+}
+
+.home-content{
+  font-size: 30px;
+}
+.home-image{
+  height: 500px;
+}
+
+.dog{
+  height: 100%;
+}

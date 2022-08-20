@@ -1,0 +1,28 @@
+.nav-container{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: max(180px, 12vw);
+}
+
+.nav-links-red{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: min(12%, 5vw);
+  color: var(--red);
+}
+
+.nav-links-white{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: min(12%, 5vw);
+  color: var(--white);
+}
+
+.nav-link{
+  font-size: 30px;
+}
+
