@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./Profile.css"
+import "./Description.css"
 
-export default function Profile() {
+export default function Desc() {
     return (
         <div>
             <Navbar></Navbar>
-
+            
         </div>
     );
 }
