@@ -8,10 +8,10 @@ app = Flask(__name__, static_url_path="",static_folder="website/build", template
 def index() -> str:
     return render_template('index.html')
 
-@app.route("/size")
+@app.route("/test")
 def sizes() -> str:
-    return f"{pet_finder.options.SIZE}"
+    return f"{pet_finder.parser.pet_info()}"
 
 @app.route('/<path:path>')
-def static_file(path):
+def static_file(path: str) -> str:
     return app.send_static_file(path)
