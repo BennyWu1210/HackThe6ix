@@ -24,7 +24,7 @@ export default function Swipe() {
     })
     return (
         <div className="swipe-body">
-            <Navbar color="white"></Navbar>
+            <Navbar color="blue"></Navbar>
             <div className="left-arrow"></div>
             <div className="image"></div>
             <div className="right-arrow"></div>
