@@ -24,6 +24,7 @@ img{
 .card-text{
   text-align: center;
   vertical-align: center;
+  margin: 10px;
 }
 .card-name{
   text-align: center;

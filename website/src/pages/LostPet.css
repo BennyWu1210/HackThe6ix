@@ -1,0 +1,13 @@
+.lost-form{
+  margin: 50px;
+}
+
+.lost-species{
+  width: max(40vw, 300px);
+}
+
+.lost-species-text{
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--dark-yellow)
+}

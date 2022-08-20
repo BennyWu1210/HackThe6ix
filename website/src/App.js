@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Swipe from "./pages/Swipe";
 import Contact from "./pages/Contact";
+import LostPet from "./pages/LostPet";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/swipe" element={<Swipe />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/profile/lost-pet" element={<LostPet />} />
       </Routes>
     </Router>
   );
