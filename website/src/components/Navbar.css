@@ -37,6 +37,10 @@
   color: var(--red)
 }
 
+.nav-link-blue:hover{
+  color: var(--white)
+}
+
 .nav-logo {
   padding-top: 4rem;
 }
