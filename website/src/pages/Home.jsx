@@ -6,7 +6,7 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home-container">
-      <Navbar></Navbar>
+      <Navbar color="red" />
       <div className="home-hero">
         <div className="home-image">
           <img className="dog" src={require("../images/doggie.png")} />

@@ -6,6 +6,10 @@
   margin-right: max(180px, 12vw);
 }
 
+.Link{
+  text-decoration: none;
+}
+
 .nav-links-red{
   list-style: none;
   display: grid;
