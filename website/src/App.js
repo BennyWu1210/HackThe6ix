@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Swipe from "./pages/Swipe";
-import Description from "./pages/Description";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/swipe" element={<Swipe />} />
-        <Route path="/description" element={<Description />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
