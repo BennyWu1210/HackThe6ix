@@ -5,7 +5,7 @@ import "./Contact.css"
 export default function Contact() {
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar color="red"></Navbar>
             
         </div>
     );
