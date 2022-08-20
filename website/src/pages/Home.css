@@ -100,5 +100,6 @@
 
 .page-cards{
   display: flex;
+  margin-left: -100px;
 }
 
