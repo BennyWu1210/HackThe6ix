@@ -5,7 +5,7 @@ import "./Description.css"
 export default function Desc() {
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar color="red"></Navbar>
             
         </div>
     );

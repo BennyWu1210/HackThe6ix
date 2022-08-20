@@ -5,7 +5,7 @@ import "./Profile.css"
 export default function Profile() {
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar color="red"></Navbar>
 
         </div>
     );

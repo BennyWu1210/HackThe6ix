@@ -5,7 +5,7 @@ import "./Swipe.css"
 export default function Swipe() {
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar color="red"></Navbar>
             
         </div>
     );
