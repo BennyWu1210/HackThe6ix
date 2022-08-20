@@ -10,23 +10,30 @@
   text-decoration: none;
 }
 
-.nav-links-red{
+.nav-links{
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: min(12%, 5vw);
-  color: var(--red);
 }
 
-.nav-links-white{
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: min(12%, 5vw);
-  color: var(--white);
-}
-
-.nav-link{
+.nav-link-red{
+  text-decoration: none;
   font-size: 30px;
+  color: var(--red)
+}
+
+.nav-link-red:hover{
+  color: var(--blue)
+}
+
+.nav-link-white{
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--white)
+}
+
+.nav-link-white:hover{
+  color: var(--red)
 }
 

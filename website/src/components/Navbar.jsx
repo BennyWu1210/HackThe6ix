@@ -4,18 +4,26 @@ import "./Navbar.css";
 
 export default function Navbar({ color }) {
   return (
-    <nav className="navbar">
-      <div className="main">
+    <nav className="nav-container">
+      <div className="nav-logo">
         <a href="/">
           <img src={"/Logo.png"} alt="logo should be here"/>
         </a>
       </div>
 
-      <div class={`nav-links-${color}`} style={{ color: color }}>
-        <li className="nav-link">Home</li>
-        <li className="nav-link">Profile</li>
-        <li className="nav-link">Swipe</li>
-        <li className="nav-link">Description</li>
+      <div class="nav-links">
+        <Link className={`nav-link-${color}`} to="/">
+          Home
+        </Link>
+        <Link className={`nav-link-${color}`} to="/Profile">
+          Profile
+        </Link>
+        <Link className={`nav-link-${color}`} to="/Swipe">
+          Swipe
+        </Link>
+        <Link className={`nav-link-${color}`} to="/Contact">
+          Contact
+        </Link>
       </div>
     </nav>
   );
