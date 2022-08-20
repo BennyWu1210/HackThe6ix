@@ -22,3 +22,7 @@ code {
   --blue: #284B63;
   --white: #F4F9E9;
 }
+
+#root {
+  min-height: 100%;
+}
