@@ -23,9 +23,11 @@ export default function Swipe() {
     checkDirection()
     })
     return (
-        <div>
-            <Navbar color="red"></Navbar>
-            
+        <div className="swipe-body">
+            <Navbar color="white"></Navbar>
+            <div className="left-arrow"></div>
+            <div className="image"></div>
+            <div className="right-arrow"></div>
         </div>
     );
 }
