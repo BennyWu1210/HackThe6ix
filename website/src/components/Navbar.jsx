@@ -1,11 +1,16 @@
 import React from "react";
 import "./Navbar.css";
 
-function Navbar({ color }) {
+export default function Navbar({ color }) {
   return (
-    <div className="nav-container">
-      <div className="nav-logo">
-        <p>Hello</p>
+    <nav className="nav-container">
+      <div className="main">
+        <a href="/">
+          <img
+            src={"../../public/Logo.png"}
+            alt="logo should be here"
+          />
+        </a>
       </div>
       <div className={`nav-links-${color}`} style={{ color: color }}>
         <li className="nav-link">Home</li>
@@ -13,8 +18,8 @@ function Navbar({ color }) {
         <li className="nav-link">Swipe</li>
         <li className="nav-link">Description</li>
       </div>
-    </div>
+    </nav>
   );
 }
 
-export default Navbar;
+
