@@ -25,10 +25,20 @@ function LostPet() {
         <form
           className="lost-species"
           getValue={(e) => setSpecie(e.currentTarget.value)}
+          method="POST"
+          action="/Profile/lost-pet"
         >
           <p className="lost-species-text">What specie is the pet?</p>
-          <Select options={options} />
+          <Select 
+            name="species"
+            onDataChange={(value, action) => {
+              this.setState({
+                  [action.name]: value
+              })
+          }}
+            options={options} />
           {specie == "other" && <input />}
+          <input type="submit"></input>
         </form>
       </div>
     </div>
