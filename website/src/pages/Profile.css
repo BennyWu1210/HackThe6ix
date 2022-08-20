@@ -1,1 +1,41 @@
-body { background-color: "#F5F5F5";}
+.prof-container {
+  background-color: var(--light-yellow);
+  height: 100vh;
+}
+
+.prof-title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.prof-options{
+  display: flex;
+  margin: 50px;
+  justify-content: space-around;
+  height: 450px;
+}
+
+.prof-options > *{
+  height: 100%;
+  width: 400px;
+  background-color: var(--white);
+  border-radius: 25px;
+  transition: transform 0.3s;
+}
+
+.prof-options > *:hover{
+  transform: scale(1.2);
+}
+
+.prof-image-content{
+  width: 100%;
+  text-decoration: none;
+  color: #232323;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+
+

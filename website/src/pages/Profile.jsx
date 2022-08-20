@@ -1,12 +1,33 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./Profile.css"
+import { Route, Routes, Link } from "react-router-dom";
+import "./Profile.css";
 
 export default function Profile() {
-    return (
-        <div>
-            <Navbar color="red"></Navbar>
-
-        </div>
-    );
+  return (
+    <div className="prof-container">
+      <Navbar color="red" />
+      <p className="prof-title">Do you have...</p>
+      <div className="prof-options">
+        <Link to="lost-pet">
+          <div className="prof-option-1">
+            <div className="prof-image">
+              <img alt="Pet Image" src={require("../images/Pet2.png")} />
+              <p className="prof-image-content">A Lost Pet?</p>
+            </div>
+          </div>
+        </Link>
+        <Link to="profile/lost-pet">
+          <div className="prof-option-2">
+            <div className="prof-image">
+              <img alt="Pet Image" src={require("../images/Pet3.png")} />
+              <p to="lost-pet" className="prof-image-content">
+                A Found Pet?
+              </p>
+            </div>
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
 }
