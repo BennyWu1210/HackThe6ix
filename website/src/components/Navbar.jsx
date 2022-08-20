@@ -7,7 +7,7 @@ export default function Navbar({ color }) {
     <nav className="nav-container">
       <div className="nav-logo">
         <a href="/">
-          <img src={"../../public/Logo.png"} alt="logo should be here" />
+          <img src={"/Logo.png"} alt="logo should be here"/>
         </a>
       </div>
 
