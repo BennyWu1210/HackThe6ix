@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Route, Routes, Link } from "react-router-dom";
 import "./Profile.css";
+import LostPet from "./LostPet";
 
 export default function Profile() {
   return (
@@ -9,7 +10,7 @@ export default function Profile() {
       <Navbar color="red" />
       <p className="prof-title">Do you have...</p>
       <div className="prof-options">
-        <Link to="lost-pet">
+        <Link to="lost-pet" element={<LostPet />}>
           <div className="prof-option-1">
             <div className="prof-image">
               <img alt="Pet Image" src={require("../images/Pet2.png")} />
@@ -17,7 +18,7 @@ export default function Profile() {
             </div>
           </div>
         </Link>
-        <Link to="profile/lost-pet">
+        <Link to="profile/lost-pet" element={<LostPet />}>
           <div className="prof-option-2">
             <div className="prof-image">
               <img alt="Pet Image" src={require("../images/Pet3.png")} />
