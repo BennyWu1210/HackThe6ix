@@ -27,7 +27,8 @@ DOG_BREED = [
 ANIMAL = {
     "cat": [],
     "dog": DOG_BREED, #can we somehow make a section within this section?
-    "goldfish": [],
+    "fish": [],
     "horse": [],
     "bird": [],
+    "rabbit": []
 }
