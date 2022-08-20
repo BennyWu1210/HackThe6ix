@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <div>
             <Navbar color="red"></Navbar>
-            
+            <h1 className="header">Contact Us!</h1>
         </div>
     );
 }
