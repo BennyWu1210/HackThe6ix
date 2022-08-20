@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Card from "../components/Card";
 import "./Home.css";
 
 function Home() {
@@ -31,7 +32,20 @@ function Home() {
             Find Your Lost Pets with a 69.69% Success Rate
           </div>
         </div>
-        <div className="page-cards"></div>
+        <div className="page-cards">
+          <Card
+            name="Vivian Dai"
+            text="100% Recommend! Found my dog within 2 hours of reporting!"
+            image={require("../images/Pet1.jpg")}
+          />
+          <Card image={require("../images/Pet1.jpg")} />
+          <Card image={require("../images/Pet1.jpg")} />
+          <Card
+            name="Vivian Dai"
+            text="100% Recommend! Found my dog within 2 hours of reporting!"
+            image={require("../images/Pet1.jpg")}
+          />
+        </div>
       </div>
     </div>
   );

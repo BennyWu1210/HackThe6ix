@@ -21,7 +21,6 @@
   font-size: 30px;
 }
 .home-image{
-  height: 500px;
   transition: transform 0.3s;
 }
 
@@ -97,5 +96,9 @@
   width: 30px;
   margin-top: 80px;
   background-color: var(--red);
+}
+
+.page-cards{
+  display: flex;
 }
 
