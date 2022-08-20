@@ -7,11 +7,27 @@ SIZE = [
 COLOUR = [
     "red",
     "blue",
-    "green"
+    "green",
+    "beige",
+    "snow white",
+    "dirty white",
+    "golden yellow",
+    "brown",
+    "caramel",
 ]
 
 ANIMAL = [
     "cat",
-    "dog",
-    "goldfish"
+    "dog", #can we somehow make a section within this section?
+    "goldfish",
+    "horse",
+    "bird",
 ]
+
+DOG BREED = {
+    "poodle",
+    "retriever",
+    "chihuahua",
+    "labradoodle",
+    "husky"
+}
