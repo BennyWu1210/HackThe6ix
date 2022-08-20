@@ -16,18 +16,18 @@ COLOUR = [
     "caramel",
 ]
 
-ANIMAL = [
-    "cat",
-    "dog", #can we somehow make a section within this section?
-    "goldfish",
-    "horse",
-    "bird",
-]
-
-DOG BREED = {
+DOG_BREED = [
     "poodle",
     "retriever",
     "chihuahua",
     "labradoodle",
     "husky"
+]
+
+ANIMAL = {
+    "cat": [],
+    "dog": DOG_BREED, #can we somehow make a section within this section?
+    "goldfish": [],
+    "horse": [],
+    "bird": [],
 }
