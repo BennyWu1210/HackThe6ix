@@ -9,10 +9,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/profile' element={<Profile/>} />
-        <Route path='/swipe' element={<Swipe/>} />
-        <Route path='/description' element={<Description/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/swipe" element={<Swipe />} />
+        <Route path="/description" element={<Description />} />
       </Routes>
     </Router>
   );
