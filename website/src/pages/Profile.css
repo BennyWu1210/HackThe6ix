@@ -1,3 +1,11 @@
+
+body { 
+    background-color: var(--light-yellow);
+}
+
+a {
+  text-decoration: none;
+}
 .prof-container {
   background-color: var(--light-yellow);
   height: 100vh;
