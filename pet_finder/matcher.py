@@ -5,11 +5,12 @@ missing_pets = []
 COLOUR_TOLERANCE = 50
 
 class Pet:
-    def __init__(self, size, colour, animal, image):
+    def __init__(self, size, colour, animal, image, contact):
         self.size = size
         self.colour
         self.animal = animal
         self.image = image
+        self.contact = contact
 
 def add_missing_pet(pet: str):
     pet_parsed = json.loads(pet)
@@ -37,3 +38,8 @@ def get_pet_imgs(pet_des: str) -> list:
     for pet in pets:
         pet_imgs.append(pet.image)
     return pet_imgs
+
+def get_contact(img: str) -> str:
+    for pet in missing_pets:
+        if pet.image == img:
+            return pet.contact

@@ -1,5 +1,5 @@
 SIZE = [
-    "big",
+    "large",
     "medium",
     "small"
 ]

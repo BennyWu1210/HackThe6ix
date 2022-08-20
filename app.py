@@ -10,7 +10,7 @@ def index() -> str:
 
 @app.route("/test")
 def sizes() -> str:
-    return f"{pet_finder.parser.pet_info()}"
+    return f"{pet_finder.parser.get_sizes()}"
 
 @app.route('/<path:path>')
 def static_file(path: str) -> str:
