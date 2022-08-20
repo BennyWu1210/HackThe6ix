@@ -1,5 +1,5 @@
 # HackThe6ix
- Rainbow can you go think of a name ahhhhh
+ Presenting...Dog Tinder!
 
 ## Setup
 1. Run `pip install r requirements.txt` to install Python dependencies
