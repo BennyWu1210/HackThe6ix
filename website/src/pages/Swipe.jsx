@@ -28,9 +28,7 @@ export default function Swipe() {
             <div className="left-arrow"></div>
             <div className="image"></div>
             <div className="right-arrow"></div>
-        <div>
-            <Navbar color="blue"></Navbar>
-            
+
         </div>
     );
 }
