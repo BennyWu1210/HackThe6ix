@@ -24,7 +24,7 @@ export default function Swipe() {
     })
     return (
         <div>
-            <Navbar color="red"></Navbar>
+            <Navbar color="blue"></Navbar>
             
         </div>
     );

@@ -5,7 +5,7 @@ import "./Contact.css"
 export default function Contact() {
     return (
         <div>
-            <Navbar color="red"></Navbar>
+            <Navbar color="white"></Navbar>
             <h1 className="header">Contact Us!</h1>
             <p className="sigma">
                 Furry Finder is a website created with the intention of helping owners 
