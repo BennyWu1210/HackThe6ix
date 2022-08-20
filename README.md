@@ -1,5 +1,5 @@
 # HackThe6ix
- Presenting...Dog Tinder!
+ Presenting...Furry Finder! Find your loved furries using this website 💛
 
 ## Setup
 1. Run `pip install -r requirements.txt` to install Python dependencies

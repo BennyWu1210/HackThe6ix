@@ -2,10 +2,12 @@ import json
 
 missing_pets = []
 
+COLOUR_TOLERANCE = 50
+
 class Pet:
     def __init__(self, size, colour, animal, image):
         self.size = size
-        self.colour = colour
+        self.colour
         self.animal = animal
         self.image = image
 
@@ -19,8 +21,14 @@ def return_matches(pet_des: str) -> list:
     pet_parsed = json.loads(pet_des)
     if (("size" in pet_parsed.keys()) and ("colour" in pet_parsed.keys()) and ("animal" in pet_parsed.keys())):
         for pet in missing_pets:
-            if (pet_parsed["size"] == pet.size) and (pet_parsed["colour"] == pet.colour) and (pet_parsed["animal"] == pet.animal):
-                possible_pets.append(pet)
+            if (pet_parsed["size"] == pet.size) \
+                and (
+                    abs(pet_parsed["colour"][0] - pet.colour[0]) < 50 \
+                    and abs(pet_parsed["colour"][1] - pet.colour[1]) < 50 \
+                    and abs(pet_parsed["colour"][2] - pet.colour[2]) < 50 \
+                ) \
+                and (pet_parsed["animal"] == pet.animal):
+                    possible_pets.append(pet)
     return possible_pets # returns the class of pets
 
 def get_pet_imgs(pet_des: str) -> list:
