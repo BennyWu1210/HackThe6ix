@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Card from "../components/Card";
 import "./Swipe.css";
 
 export default function Swipe() {
@@ -35,7 +36,13 @@ export default function Swipe() {
             <Navbar color="blue"></Navbar>
             <div className="left-arrow">
                 <div className="arrow">←</div>This is not my pet</div>
-            <div className="image"></div>
+            <div className="image">
+              <Card
+                name="Breed"
+                text="Colors are shit and piss"
+                image={require("../images/Pet2.png")}
+              />
+            </div>
             <div className="right-arrow"><div className="arrow">→</div>This is my pet!</div>
             <Footer></Footer>
         </div>
