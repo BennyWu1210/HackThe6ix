@@ -2,6 +2,11 @@ body {
     background-color: var(--blue);
 }
 
+.contact-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 .header {
     margin-left: 120px;
     margin-right: 120px;

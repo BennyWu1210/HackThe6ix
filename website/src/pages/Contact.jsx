@@ -5,7 +5,7 @@ import "./Contact.css"
 
 export default function Contact() {
     return (
-        <div>
+        <div className="contact-container">
             <Navbar color="white"></Navbar>
             <h1 className="header">Contact Us!</h1>
             <p className="sigma">

@@ -24,5 +24,6 @@ code {
 }
 
 #root {
+  position: relative;
   min-height: 100%;
 }
