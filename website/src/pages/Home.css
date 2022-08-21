@@ -1,6 +1,7 @@
 .home-container{
   background-color: var(--orange);
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 .home-hero{
@@ -21,6 +22,8 @@
   font-size: 30px;
 }
 .home-image{
+  max-height: 800px;
+  max-width: calc(800px / 2);
   transition: transform 0.3s;
 }
 
@@ -99,8 +102,8 @@
   background-color: var(--red);
 }
 
-.page-cards{
+.page-cards {
   display: flex;
-  margin-left: -100px;
+  justify-content: space-between;
 }
 

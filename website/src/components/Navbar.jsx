@@ -16,10 +16,10 @@ export default function Navbar({ color }) {
           Home
         </Link>
         <Link className={`nav-link-${color}`} to="/Profile">
-          Profile
+          Report
         </Link>
         <Link className={`nav-link-${color}`} to="/Swipe">
-          Swipe
+          Find 
         </Link>
         <Link className={`nav-link-${color}`} to="/Contact">
           Contact

@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./Contact.css"
 
 export default function Contact() {
     return (
-        <div>
+        <div className="contact-container">
             <Navbar color="white"></Navbar>
             <h1 className="header">Contact Us!</h1>
             <p className="sigma">
@@ -16,9 +17,11 @@ export default function Contact() {
             </p>
             <p className="alpha">
                 If you have any questions, concerns, compliments, or reviews, you may 
-                call our customer service number at: 1-382-596-8277 or email us at 
-                furryfinder@wearehackerone@gmail.com. We are happy to help!
+                call our customer service number at: <a target="_blank" href="tel:1-382-596-8277">1-382-596-8277 </a> 
+                or email us at <a target="_blank" href="mailto:furryfinder@wearehackerone@gmail.com"> 
+                furryfinder@wearehackerone@gmail.com</a>. We look forward to helping you!
             </p>
+            <Footer></Footer>
         </div>
     );
 }

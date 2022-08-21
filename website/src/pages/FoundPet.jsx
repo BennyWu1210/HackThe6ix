@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import "./LostPet.css";
+import "./FoundPet.css";
 import Navbar from "../components/Navbar";
 import Select from "react-select";
 
-function LostPet() {
+function FoundPet() {
   const [species, setSpecies] = useState("");
   const [breed, setBreed] = useState("");
   const [color, setColor] = useState([]);
   const [img, setImage] = useState(null);
 
-  const options = [
+  const optionsSpecies = [
     { value: "dog", label: "Dog" },
     { value: "cat", label: "Cat" },
     { value: "bird", label: "Bird" },
@@ -17,37 +17,32 @@ function LostPet() {
     { value: "giraffe", label: "Giraffe" },
     { value: "other", label: "Other" },
   ];
-  console.log(species);
+
+  console.log("Hi");
   return (
-    <div className="lost-container">
+    <div className="found-container">
       <Navbar color="white" />
-      <div className="lost-form">
-        <form className="lost-species" method="POST" action="/Profile/lost-pet">
-          <p className="lost-species-text">What species is the pet?</p>
+      <div className="found-form">
+        <form
+          className="foundnp-species"
+          getValue={(e) => setSpecies(e.currentTarget.value)}
+          method="POST"
+          action="/Profile/found-pet"
+          enctype="multipart/form-data"
+        >
+          <p className="found-species-text">What species is the pet?</p>
           <Select
             name="species"
-            onChange={(e) => setSpecies(e.value)}
             onDataChange={(value, action) => {
               this.setState({
                 [action.name]: value,
               });
             }}
-            options={options}
+            options={optionsSpecies}
           />
-          {species == "other" && (
-            <input
-              style={{ height: "30px", borderRadius: "10px" }}
-              onChange={(e) => setSpecies(e.currentTarget.value)}
-            />
-          )}
-          <br />
-          <p className="lost-species-text">What breed is the pet?</p>
-          <input
-            style={{ height: "30px", borderRadius: "10px" }}
-            onChange={(e) => setBreed(e.currentTarget.value)}
-          />
-          <p className="lost-species-text">What color is the pet?</p>
-          <input type="color" name="colour" />
+          {species == "other" && <input />}
+          <p className="found-species-text">Colour of pet</p>
+          <input type="color" name="colour"></input>
           <p className="found-species-text">Size of pet</p>
           <input type="radio" id="large" value="large" name="size"></input>
           <label htmlFor="large">
@@ -71,18 +66,22 @@ function LostPet() {
               className="found-image"
               src={require("../images/small.jpg")}
             ></img>
-          </label><br/><br/>
-          <br />
-          <input type="submit" className="lost-button" />
+          </label>
+          <br></br>
+          <p className="lost-species-text">Upload an image (optional)</p>
+          <input type="file" name="image" accept="image/*"/>
+          <p>Email</p>
+          <input type="email" name="contact"></input>
+          <input type="submit"></input>
         </form>
         <img
-          src={require("../images/Pet4.gif")}
-          alt="cute giraffe"
-          className="lost-gif"
+          src={require("../images/Pet5.gif")}
+          alt="cute dog"
+          className="found-gif"
         />
       </div>
     </div>
   );
 }
 
-export default LostPet;
+export default FoundPet;

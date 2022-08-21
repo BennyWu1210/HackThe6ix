@@ -2,22 +2,36 @@ body {
     background-color: var(--blue);
 }
 
+.contact-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 .header {
-    margin-left: 200px;
-    font-weight: 500;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-weight: bold;
+    font-size: 80px;
     color: var(--white);
 }
 
 .sigma {
-    margin-left: 200px;
+    margin-left: 120px;
+    margin-right: 120px;
     margin-top: 10px;
     font-size: 30px;
     color: var(--white);
 }
 
 .alpha {
-    margin-left: 200px;
-    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 40px;
     font-size: 30px;
     color: var(--white);
+}
+
+a{
+    color: var(--dark-yellow);
+    font-weight: 600;
 }

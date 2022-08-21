@@ -2,3 +2,49 @@
     min-height: 100vh;
     background-color: var(--red);
 }
+
+.swipe-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.left-arrow {
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: 180px;
+    color: red;
+}
+
+.left-desc {
+    margin-bottom: 0%;
+    font-size: 30px;
+    color: red;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.right-arrow {
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: 180px;
+    color: green;
+}
+
+.right-desc {
+    margin-bottom: 0%;
+    font-size: 30px;
+    color: green;
+}
