@@ -1,9 +1,15 @@
 .ahaha {
     position: absolute;
     width: 100%;
+<<<<<<< HEAD
     height: 120px;
     bottom: 0;
     padding: 7rem 0 2rem 0;
+=======
+    height: 110px;
+    margin-top: 10px;
+    margin-bottom: 0;
+>>>>>>> a492a805e6ab0e3b6fed33fb7cdc1d21660d3734
     border-radius: 0;
 }
 .ahaha img {

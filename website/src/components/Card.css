@@ -31,12 +31,12 @@ img{
   vertical-align: center;
 }
 
-@keyframes move {
+/* @keyframes move {
   from {
     transform: translateX(100%);
   }
   to{
     transform: translateX(-100%);
   }
-}
+} */
 
