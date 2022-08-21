@@ -36,7 +36,7 @@ export default function Swipe() {
             <Navbar color="blue"></Navbar>
             <div className="gigachad">
               <div className="left-arrow">
-                  <div className="arrow">←</div>
+                  <div className="arrow-no">←</div>
                   This is not my pet
               </div>
               <div className="image">
@@ -47,7 +47,7 @@ export default function Swipe() {
                 />
               </div>
               <div className="right-arrow">
-                <div className="arrow">→</div>
+                <div className="arrow-yes">→</div>
                 This is my pet!
               </div>
             </div>
