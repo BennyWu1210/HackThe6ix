@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Select from "react-select";
 
 function LostPet() {
-  const [specie, setSpecie] = useState("");
+  const [species, setspecies] = useState("");
   const [breed, setBreed] = useState("");
   const [color, setColor] = useState([]);
   const [img, setImage] = useState(null);
@@ -17,16 +17,16 @@ function LostPet() {
     { value: "giraffe", label: "Giraffe" },
     { value: "other", label: "Other" },
   ];
-  console.log(specie);
+  console.log(species);
   return (
     <div className="lost-container">
       <Navbar color="white" />
       <div className="lost-form">
         <form className="lost-species" method="POST" action="/Profile/lost-pet">
-          <p className="lost-species-text">What specie is the pet?</p>
+          <p className="lost-species-text">What species is the pet?</p>
           <Select
             name="species"
-            onChange={(e) => setSpecie(e.value)}
+            onChange={(e) => setspecies(e.value)}
             onDataChange={(value, action) => {
               this.setState({
                 [action.name]: value,
@@ -34,10 +34,10 @@ function LostPet() {
             }}
             options={options}
           />
-          {specie == "other" && (
+          {species == "other" && (
             <input
               style={{ height: "30px", borderRadius: "10px" }}
-              onChange={(e) => setSpecie(e.currentTarget.value)}
+              onChange={(e) => setspecies(e.currentTarget.value)}
             />
           )}
           <br />
