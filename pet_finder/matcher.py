@@ -15,7 +15,8 @@ class Pet:
 def add_missing_pet(pet: str):
     pet_parsed = json.loads(pet)
     if (("size" in pet_parsed.keys()) and ("colour" in pet_parsed.keys()) and ("animal" in pet_parsed.keys()) and ("image" in pet_parsed.keys()) and ("contact" in pet_parsed.keys())):
-        missing_pets.append(Pet(pet_parsed["size"], pet_parsed["colour"], pet_parsed["animal"], pet_parsed["image"]))
+        missing_pets.append(Pet(pet_parsed["size"], pet_parsed["colour"], pet_parsed["animal"], pet_parsed["image"], pet_parsed["contact"]))
+        print(missing_pets)
 
 def return_matches(pet_des: str) -> list:
     possible_pets = []

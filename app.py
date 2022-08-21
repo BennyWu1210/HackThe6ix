@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__, static_url_path="",static_folder="website/build", template_folder="website/build")
 
-UPLOAD_FOLDER = "./website/build/static/images"
+UPLOAD_FOLDER = "./website/build/static/media"
 
 @app.route("/")
 def index() -> str:
@@ -29,15 +29,11 @@ def found_pet() -> str:
     size = request.form["size"]
     colour = conversions.hex_to_rgb(request.form["colour"])
     animal = request.form["species"]
-    image = os.path.join(UPLOAD_FOLDER, secure_filename(file.filename))
+    image = secure_filename(file.filename)
     contact = request.form["contact"]
-    bruh = f"{{ \
-        \"size\": \"{size}\", \
-        \"colour\": \"{colour}\", \
-        \"animal\": \"{animal}\", \
-        \"image\": \"{image}\", \
-        \"contact\": \"{contact}\" \
-    }}"
+    bruh = f"{{\"size\": \"{size}\", \"colour\": \"{colour}\", \"animal\": \"{animal}\", \"image\": \"{image}\", \"contact\": \"{contact}\"}}"
+    print(bruh)
+    pet_finder.matcher.add_missing_pet(bruh)
     return f"{bruh} {file}"
 
 @app.route("/test")
