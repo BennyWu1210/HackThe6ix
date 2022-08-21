@@ -39,15 +39,15 @@ function Home() {
             text="100% Recommend! Found my dog within 2 hours of reporting!"
             image={require("../images/Pet1.jpg")}
           />
-          <Card 
+          <Card
             name="Benny Wu"
             text="I was so worried after losing my goldfish Ben Jr. while taking him on a walk! Luckily Furry Finder helped me locate Ben Jr. immediately!"
-            image={require("../images/Pet1.jpg")} 
+            image={require("../images/Pet1.jpg")}
           />
-          <Card 
+          <Card
             name="Rainbow Huang"
             text="Found my whore slut bitch ass dog with Furry Finder #mydogisacat"
-            image={require("../images/Pet1.jpg")} 
+            image={require("../images/Pet1.jpg")}
           />
           <Card
             name="Claire Wang"

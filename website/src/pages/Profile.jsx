@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { Route, Routes, Link } from "react-router-dom";
 import "./Profile.css";
 import LostPet from "./LostPet";
+import FoundPet from "./FoundPet";
 
 export default function Profile() {
   return (
@@ -19,7 +20,7 @@ export default function Profile() {
             </div>
           </div>
         </Link>
-        <Link to="profile/lost-pet" element={<LostPet />}>
+        <Link to="profile/found-pet" element={<FoundPet />}>
           <div className="prof-option-2">
             <div className="prof-image">
               <img alt="Pet Image" src={require("../images/Pet3.png")} />

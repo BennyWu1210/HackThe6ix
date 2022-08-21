@@ -20,8 +20,8 @@ a {
 }
 
 .prof-options > *{
-  height: 100%;
-  width: 400px;
+  height: max(100%, 700px);
+  width: max(400px, 30%);
   background-color: var(--white);
   border-radius: 25px;
   transition: transform 0.3s;

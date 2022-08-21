@@ -2,3 +2,21 @@
     min-height: 100vh;
     background-color: var(--red);
 }
+
+.left-arrow {
+    width: 30%;
+    float: left;
+    color: red;
+    margin-left: 0;
+}
+
+.right-arrow {
+    width: 30%;
+    float: right;
+    color: green;
+    margin-right: 0;
+}
+
+.arrow {
+    font-size: 10rem;
+}
