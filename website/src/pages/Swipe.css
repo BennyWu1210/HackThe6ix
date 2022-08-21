@@ -13,35 +13,37 @@
 .left-side {
     display: flex;
     justify-content: center;
-    align-items: column;
+    flex-direction: column-reverse;
 }
 
 .left-arrow {
+    margin-top: 0%;
     font-weight: bold;
     font-size: 180px;
     color: red;
-    float: right;
 }
 
 .left-desc {
+    margin-bottom: 0%;
     font-size: 30px;
     color: red;
-    float: left;
 }
 
 .right-side {
     display: flex;
     justify-content: center;
-    align-items: column;
+    flex-direction: column-reverse;
 }
 
 .right-arrow {
+    margin-top: 0%;
     font-weight: bold;
     font-size: 180px;
     color: green;
 }
 
 .right-desc {
+    margin-bottom: 0%;
     font-size: 30px;
     color: green;
 }

@@ -58,6 +58,25 @@ function Home() {
             image={require("../images/Pet1.jpg")}
             isMoving="true"
           />
+          <Card
+            name="Lala"
+            text="I literally have skin cancer"
+            image={require("../images/Pet1.jpg")}
+            isMoving="true"
+          />
+          <Card
+            name="Lala"
+            text="I literally have skin cancer"
+            image={require("../images/Pet1.jpg")}
+            isMoving="true"
+          />
+          <Card
+            name="Claire Wang"
+            text="Thanks to Rainbow Huang I was able to reunite with my beloved
+                  Spiky the Hedgehog in less than 69 hours after his first disappearance!"
+            image={require("../images/Pet1.jpg")}
+            isMoving="true"
+          />
         </div>
       </div>
       <Footer></Footer>
