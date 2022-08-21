@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./Contact.css"
 
 export default function Contact() {
@@ -17,8 +18,9 @@ export default function Contact() {
             <p className="alpha">
                 If you have any questions, concerns, compliments, or reviews, you may 
                 call our customer service number at: <a target="_blank" href="tel:1-382-596-8277">1-382-596-8277</a> or email us at 
-                <a target="_blank" href="mailto:furryfinder@wearehackerone@gmail.com">furryfinder@wearehackerone@gmail.com</a>>. We are happy to help!
+                <a target="_blank" href="mailto:furryfinder@wearehackerone@gmail.com">furryfinder@wearehackerone@gmail.com</a>. We are happy to help!
             </p>
+            <Footer></Footer>
         </div>
     );
 }
