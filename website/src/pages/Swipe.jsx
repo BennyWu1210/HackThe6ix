@@ -34,21 +34,24 @@ export default function Swipe() {
     return (
         <div className="swipe-body">
             <Navbar color="blue"></Navbar>
-            <div className="left-arrow">
-                <div className="arrow">←</div>
-                This is not my pet
+            <div className="gigachad">
+              <div className="left-arrow">
+                  <div className="arrow">←</div>
+                  This is not my pet
+              </div>
+              <div className="image">
+                <Card
+                  name="Breed"
+                  text="Colors are shit and piss"
+                  image={require("../images/Pet2.png")}
+                />
+              </div>
+              <div className="right-arrow">
+                <div className="arrow">→</div>
+                This is my pet!
+              </div>
             </div>
-            <div className="image">
-              <Card
-                name="Breed"
-                text="Colors are shit and piss"
-                image={require("../images/Pet2.png")}
-              />
-            </div>
-            <div className="right-arrow">
-              <div className="arrow">→</div>
-              This is my pet!
-            </div>
+            
             <Footer></Footer>
         </div>
     );

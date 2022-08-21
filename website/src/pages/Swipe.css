@@ -3,9 +3,15 @@
     background-color: var(--red);
 }
 
+.gigachad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
 .left-arrow {
     display: flex;
-    justify-content: flex-start;
     width: 30%;
     float: left;
     color: red;
@@ -14,7 +20,6 @@
 
 .right-arrow {
     display: flex;
-    justify-content: flex-end;
     width: 30%;
     float: right;
     color: green;
@@ -27,6 +32,5 @@
 
 .image {
     display: flex;
-    justify-content: center;
     padding: 10px;
 }
