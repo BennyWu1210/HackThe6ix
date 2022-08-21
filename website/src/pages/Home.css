@@ -1,6 +1,7 @@
 .home-container{
   background-color: var(--orange);
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 .home-hero{

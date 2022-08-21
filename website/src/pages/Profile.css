@@ -3,7 +3,8 @@ a {
 }
 .prof-container {
   background-color: var(--light-yellow);
-  height: 100vh;
+  min-height: 120vh;
+  position: relative;
 }
 
 .prof-title{
