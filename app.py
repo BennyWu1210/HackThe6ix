@@ -42,6 +42,10 @@ def found_pet() -> str:
 def sizes() -> str:
     return f"{pet_finder.parser.get_sizes()}"
 
+@app.route("/Thanks")
+def thanks() -> str:
+    return render_template("bruh.html")
+
 @app.route('/<path:path>')
 def static_file(path: str) -> str:
     return app.send_static_file(path)
