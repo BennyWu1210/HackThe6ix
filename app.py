@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, redirect, render_template, request, send_from_directory
 import pet_finder
 from misc import conversions
 from werkzeug.utils import secure_filename
@@ -20,7 +20,8 @@ def lost_pet() -> str:
     bruh = f"{{\"size\": \"{size}\", \"colour\": \"{colour}\", \"animal\": \"{animal}\"}}"
     images = pet_finder.matcher.get_pet_imgs(bruh)
     print(request.form)
-    return f"{images}" # TODO: deal with this lolololol
+    # return f"{images}" # TODO: deal with this lolololol
+    return redirect("/Thanks")
 
 @app.route("/Profile/found-pet", methods=["POST"])
 def found_pet() -> str:
@@ -34,7 +35,8 @@ def found_pet() -> str:
     bruh = f"{{\"size\": \"{size}\", \"colour\": \"{colour}\", \"animal\": \"{animal}\", \"image\": \"{image}\", \"contact\": \"{contact}\"}}"
     print(bruh)
     pet_finder.matcher.add_missing_pet(bruh)
-    return f"{bruh} {file}"
+    # return f"{bruh} {file}"
+    return redirect("/Thanks")
 
 @app.route("/test")
 def sizes() -> str:
