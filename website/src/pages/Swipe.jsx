@@ -19,36 +19,63 @@ export default function Swipe() {
   //     console.log("right");
   //   }
   // }
-
+  const lol = [
+    {
+      image: require("../images/hdgehg.jpg"),
+      text: "spikeboi roll"
+    },
+    {
+      image: require("../images/louis.jpg"),
+      text: "ice ice baby"
+    },
+    {
+      image: require("../images/sonic.jpg"),
+      text: "gotta go fast"
+    },
+    {
+      image: require("../images/toystory.png"),
+      text: "angy hdgehog"
+    },
+    {
+      image: require("../images/shaymin.jpg"),
+      text: "gotta catch 'em all!"
+    },
+    {
+      image: require("../images/spiky.png"),
+      text: "thing in a bowl... is it tasty?"
+    }
+  ]
   const [testingStuffLol, setStuff] = useState(
     <span style={{ fontSize: "100px" }}>Try Swiping</span>
   );
+  const [bruh, setBruh] = useState(0)
   const handlers = useSwipeable({
     // Vivian: Just replace this arrow function ("setStuff") as the event listener
     onSwipedLeft: (eventData) =>
-      setStuff(
-        <p
-          style={{
-            fontSize: "100px",
-            position: "absolute",
-            left: 400,
-            right: 500,
-          }}
-        >
-          {eventData.dir}!!
-        </p>
-      ),
+      // setStuff(
+      //   <p
+      //     style={{
+      //       fontSize: "3rem",
+      //       position: "absolute",
+      //       left: 400,
+      //       right: 500,
+      //     }}
+      //   >
+      //     :( not your pet
+      //   </p>
+      // ),
+      setBruh(bruh + 1),
     onSwipedRight: (eventData) =>
       setStuff(
         <p
           style={{
-            fontSize: "100px",
+            fontSize: "3rem",
             position: "absolute",
             left: 1000,
             right: 500,
           }}
         >
-          {eventData.dir}!!
+          Your pet is with <a target="_blank" href="mailto:rainbow@gmail.com">rainbow@gmail.com</a>
         </p>
       ),
     swipeDuration: 500,
@@ -88,9 +115,10 @@ export default function Swipe() {
 
         <div className="image">
           <Card
-            name="Breed"
-            text="Colors are shit and piss"
-            image={require("../images/Pet2.png")}
+            className="hedgehogbruhmoment"
+            name="Hedgehog"
+            text={lol[bruh%lol.length].text}
+            image={lol[bruh%lol.length].image}
             isMoving="false"
           />
         </div>
