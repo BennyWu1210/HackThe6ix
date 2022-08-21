@@ -1,0 +1,14 @@
+.found-species-text{
+	font-size: 25px;
+  font-weight: 400;
+  color: var(--dark-yellow)
+}
+
+.found-form{
+	margin: 50px;
+}
+
+.found-image{
+	width: 300px;
+	border-radius: 10px;
+}
