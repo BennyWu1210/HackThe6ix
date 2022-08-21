@@ -21,6 +21,8 @@
   font-size: 30px;
 }
 .home-image{
+  max-height: 800px;
+  max-width: calc(800px / 2);
   transition: transform 0.3s;
 }
 
