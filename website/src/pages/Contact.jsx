@@ -17,8 +17,9 @@ export default function Contact() {
             </p>
             <p className="alpha">
                 If you have any questions, concerns, compliments, or reviews, you may 
-                call our customer service number at: <a target="_blank" href="tel:1-382-596-8277">1-382-596-8277</a> or email us at 
-                 <a target="_blank" href="mailto:furryfinder@wearehackerone@gmail.com">furryfinder@wearehackerone@gmail.com</a>. We look forward to helping you!
+                call our customer service number at: <a target="_blank" href="tel:1-382-596-8277">1-382-596-8277</a> 
+                or email us at <a target="_blank" href="mailto:furryfinder@wearehackerone@gmail.com"> 
+                furryfinder@wearehackerone@gmail.com</a>. We look forward to helping you!
             </p>
             <Footer></Footer>
         </div>
