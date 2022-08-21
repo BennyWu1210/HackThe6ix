@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, request, send_from_directory
 import pet_finder
+from misc import conversions
 
 app = Flask(__name__, static_url_path="",static_folder="website/build", template_folder="website/build")
 
@@ -10,20 +11,13 @@ def index() -> str:
 
 @app.route("/Profile/lost-pet", methods=["POST"])
 def lost_pet() -> str:
-    # size = request.form["size"]
-    # colour = request.form["colour"]
+    size = request.form["size"]
+    colour = conversions.hex_to_rgb(request.form["colour"])
     animal = request.form["species"]
-    # pet_finder.matcher.get_pet_imgs(str({
-    #     "size": size,
-    #     "colour": colour,
-    #     "animal": animal
-    # }))
-    print(str({
-        # "size": size,
-        # "colour": colour,
-        "animal": animal
-    }))
-    return f"{request.form}" # TODO: deal with this lolololol
+    bruh = f"{{\"size\": \"{size}\", \"colour\": \"{colour}\", \"animal\": \"{animal}\"}}"
+    images = pet_finder.matcher.get_pet_imgs(bruh)
+    print(request.form)
+    return f"{images}" # TODO: deal with this lolololol
 
 @app.route("/test")
 def sizes() -> str:

@@ -25,8 +25,9 @@ export default function Swipe() {
     onSwipedRight: (eventData) => console.log("right!", eventData),
     swipeDuration: 500,
     preventScrollOnSwipe: true,
-
+    trackMouse: true,
     trackTouch: true,
+    delta: 10,
   });
   // Orz Vivian I am super clueless with this:
   // document.addEventListener("touchstart", (e) => {

@@ -67,6 +67,8 @@ function FoundPet() {
             ></img>
           </label>
           <br></br>
+          <p className="lost-species-text">Upload an image (optional)</p>
+          <input type="file" />
           <input type="submit"></input>
         </form>
         <img
