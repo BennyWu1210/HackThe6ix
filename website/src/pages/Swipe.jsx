@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./Swipe.css";
 
 export default function Swipe() {
@@ -28,7 +29,7 @@ export default function Swipe() {
             <div className="left-arrow"></div>
             <div className="image"></div>
             <div className="right-arrow"></div>
-
+            <Footer></Footer>
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Route, Routes, Link } from "react-router-dom";
 import "./Profile.css";
 import LostPet from "./LostPet";
@@ -29,6 +30,7 @@ export default function Profile() {
           </div>
         </Link>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
