@@ -48,26 +48,23 @@ export default function Swipe() {
     <div className="swipe-body">
       <Navbar color="blue"></Navbar>
 
-      <div className="left-arrow">
-        <div className="arrow">←</div>This is not my pet
+      <div className="swipe-content" {...handlers}>
+        <div className="left-arrow">
+          <div className="arrow">←</div>This is not my pet
+        </div>
+        <div className="image">
+          <Card
+            name="Breed"
+            text="Colors are shit and piss"
+            image={require("../images/Pet2.png")}
+            isMoving="false"
+          />
+        </div>
+        <div className="right-arrow">
+          <div className="arrow">→</div>This is my pet!
+        </div>
       </div>
-      <div className="image">
-        <Card
-          name="Breed"
-          text="Colors are shit and piss"
-          image={require("../images/Pet2.png")}
-          isMoving="false"
-        />
-      </div>
-      <div className="right-arrow">
-        <div className="arrow">→</div>This is my pet!
-      </div>
-      <div
-        {...handlers}
-        style={{ width: "100px", backgroundColor: "var(--white)" }}
-      >
-        You can swipe here
-      </div>
+
       <Footer></Footer>
     </div>
   );

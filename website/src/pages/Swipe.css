@@ -3,6 +3,12 @@
     background-color: var(--red);
 }
 
+.swipe-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
 .gigachad {
     display: flex;
     justify-content: space-between;
