@@ -17,15 +17,13 @@
 }
 
 
-
-
-
 img{
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
 .card-content{
+  padding-top: 10px;
   text-align: center;
   vertical-align: center;
   border-radius: 0px 0px 15px 15px;
@@ -41,6 +39,8 @@ img{
 .card-name{
   text-align: center;
   vertical-align: center;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 @keyframes move {
