@@ -17,7 +17,8 @@ function FoundPet() {
     { value: "giraffe", label: "Giraffe" },
     { value: "other", label: "Other" },
   ];
-  
+
+  console.log("Hi");
   return (
     <div className="found-container">
       <Navbar color="white" />
@@ -29,24 +30,43 @@ function FoundPet() {
           action="/Profile/found-pet"
         >
           <p className="found-species-text">What specie is the pet?</p>
-          <Select 
+          <Select
             name="species"
             onDataChange={(value, action) => {
               this.setState({
-                  [action.name]: value
-              })
-          }}
-            options={optionsSpecies} />
+                [action.name]: value,
+              });
+            }}
+            options={optionsSpecies}
+          />
           {specie == "other" && <input />}
-          <p>Colour of pet</p>
+          <p className="found-species-text">Colour of pet</p>
           <input type="color" name="colour"></input>
-          <p>Size of pet</p>
+          <p className="found-species-text">Size of pet</p>
           <input type="radio" id="large" name="size"></input>
-          <label for="large"><img src={require("../images/large.jpg")}></img></label><br></br>
+          <label htmlFor="large">
+            <img
+              className="found-image"
+              src={require("../images/large.jpg")}
+            ></img>
+          </label>
+          <br></br>
           <input type="radio" id="medium" name="size"></input>
-          <label for="medium"><img src={require("../images/medium.jpg")}></img></label><br></br>
+          <label htmlFor="medium">
+            <img
+              className="found-image"
+              src={require("../images/medium.jpg")}
+            ></img>
+          </label>
+          <br></br>
           <input type="radio" id="small" name="size"></input>
-          <label for="small"><img src={require("../images/small.jpg")}></img></label><br></br>
+          <label htmlFor="small">
+            <img
+              className="found-image"
+              src={require("../images/small.jpg")}
+            ></img>
+          </label>
+          <br></br>
           <input type="submit"></input>
         </form>
       </div>

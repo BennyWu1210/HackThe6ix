@@ -26,6 +26,7 @@ function LostPet() {
           <p className="lost-species-text">What specie is the pet?</p>
           <Select
             name="species"
+            onChange={(e) => setSpecie(e.value)}
             onDataChange={(value, action) => {
               this.setState({
                 [action.name]: value,
@@ -33,8 +34,29 @@ function LostPet() {
             }}
             options={options}
           />
-          {specie == "other" && <input />}
-          <input type="submit"></input>
+          {specie == "other" && (
+            <input
+              style={{ height: "30px", borderRadius: "10px" }}
+              onChange={(e) => setSpecie(e.currentTarget.value)}
+            />
+          )}
+          <br />
+          <input type="submit" />
+        </form>
+        <form className="lost-species">
+          <p className="lost-species-text">What breed is the pet?</p>
+          <input
+            style={{ height: "30px", borderRadius: "10px" }}
+            onChange={(e) => setBreed(e.currentTarget.value)}
+          />
+        </form>
+        <form className="lost-species">
+          <p className="lost-species-text">What color is the pet?</p>
+          <input type="color" name="colour"></input>
+        </form>
+        <form className="lost-species">
+          <p className="lost-species-text">Upload an image (optional)</p>
+          <input type="file" name="colour"></input>
         </form>
       </div>
     </div>

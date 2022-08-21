@@ -19,7 +19,7 @@ export default function Profile() {
             </div>
           </div>
         </Link>
-        <Link to="profile/found-pet" element={<FoundPet />}>
+        <Link to="found-pet" element={<FoundPet />}>
           <div className="prof-option-2">
             <div className="prof-image">
               <img alt="Pet Image" src={require("../images/Pet3.png")} />
