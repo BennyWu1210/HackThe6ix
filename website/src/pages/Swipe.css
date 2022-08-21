@@ -5,44 +5,43 @@
 
 .swipe-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 3rem;
 }
 
-.gigachad {
+.left-side {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
+    justify-content: center;
+    align-items: column;
 }
 
 .left-arrow {
+    font-weight: bold;
+    font-size: 180px;
+    color: red;
+    float: right;
+}
+
+.left-desc {
+    font-size: 30px;
+    color: red;
+    float: left;
+}
+
+.right-side {
     display: flex;
     justify-content: center;
-    width: 30%;
-    float: left;
-    color: red;
-    margin-left: 0;
+    align-items: column;
 }
 
 .right-arrow {
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    float: right;
+    font-weight: bold;
+    font-size: 180px;
     color: green;
-    margin-right: 0;
 }
 
-.arrow {
-    display: flex;
-    justify-content: center;
-    font-size: 10rem;
-}
-
-.image {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
+.right-desc {
+    font-size: 30px;
+    color: green;
 }
