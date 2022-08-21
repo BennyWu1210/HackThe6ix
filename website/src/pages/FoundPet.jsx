@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Select from "react-select";
 
 function FoundPet() {
-  const [specie, setSpecie] = useState("");
+  const [species, setSpecies] = useState("");
   const [breed, setBreed] = useState("");
   const [color, setColor] = useState([]);
   const [img, setImage] = useState(null);
@@ -25,11 +25,12 @@ function FoundPet() {
       <div className="found-form">
         <form
           className="foundnp-species"
-          getValue={(e) => setSpecie(e.currentTarget.value)}
+          getValue={(e) => setSpecies(e.currentTarget.value)}
           method="POST"
           action="/Profile/found-pet"
+          enctype="multipart/form-data"
         >
-          <p className="found-species-text">What specie is the pet?</p>
+          <p className="found-species-text">What species is the pet?</p>
           <Select
             name="species"
             onDataChange={(value, action) => {
@@ -39,11 +40,11 @@ function FoundPet() {
             }}
             options={optionsSpecies}
           />
-          {specie == "other" && <input />}
+          {species == "other" && <input />}
           <p className="found-species-text">Colour of pet</p>
           <input type="color" name="colour"></input>
           <p className="found-species-text">Size of pet</p>
-          <input type="radio" id="large" name="size"></input>
+          <input type="radio" id="large" value="large" name="size"></input>
           <label htmlFor="large">
             <img
               className="found-image"
@@ -51,7 +52,7 @@ function FoundPet() {
             ></img>
           </label>
           <br></br>
-          <input type="radio" id="medium" name="size"></input>
+          <input type="radio" id="medium" value="medium" name="size"></input>
           <label htmlFor="medium">
             <img
               className="found-image"
@@ -59,7 +60,7 @@ function FoundPet() {
             ></img>
           </label>
           <br></br>
-          <input type="radio" id="small" name="size"></input>
+          <input type="radio" id="small" value="small" name="size"></input>
           <label htmlFor="small">
             <img
               className="found-image"
@@ -68,7 +69,9 @@ function FoundPet() {
           </label>
           <br></br>
           <p className="lost-species-text">Upload an image (optional)</p>
-          <input type="file" />
+          <input type="file" name="image" accept="image/*"/>
+          <p>Email</p>
+          <input type="email" name="contact"></input>
           <input type="submit"></input>
         </form>
         <img
