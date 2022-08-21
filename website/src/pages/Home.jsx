@@ -55,7 +55,6 @@ function Home() {
             image={require("../images/Pet1.jpg")}
           />
         </div>
-        <br></br><br></br><br></br>
       </div>
       <Footer></Footer>
     </div>
