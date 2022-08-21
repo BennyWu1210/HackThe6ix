@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -7,22 +7,50 @@ import { useSwipeable } from "react-swipeable";
 import "./Swipe.css";
 
 export default function Swipe() {
-  let touchStart = 0;
-  let touchEnd = 0;
-  let whyIsThereVirtualDebouncingThisIsDumb = 0;
-  const ref = React.useRef();
+  // let touchStart = 0;
+  // let touchEnd = 0;
+  // let whyIsThereVirtualDebouncingThisIsDumb = 0;
+  // const ref = React.useRef();
 
-  function checkDirection() {
-    if (touchEnd < touchStart) {
-      console.log("left");
-    } else if (touchEnd > touchStart) {
-      console.log("right");
-    }
-  }
+  // function checkDirection() {
+  //   if (touchEnd < touchStart) {
+  //     console.log("left");
+  //   } else if (touchEnd > touchStart) {
+  //     console.log("right");
+  //   }
+  // }
 
+  const [testingStuffLol, setStuff] = useState(
+    <span style={{ fontSize: "100px" }}>Try Swiping</span>
+  );
   const handlers = useSwipeable({
-    onSwipedLeft: (eventData) => console.log("left!", eventData),
-    onSwipedRight: (eventData) => console.log("right!", eventData),
+    // Vivian: Just replace this arrow function ("setStuff") as the event listener
+    onSwipedLeft: (eventData) =>
+      setStuff(
+        <p
+          style={{
+            fontSize: "100px",
+            position: "absolute",
+            left: 400,
+            right: 500,
+          }}
+        >
+          {eventData.dir}!!
+        </p>
+      ),
+    onSwipedRight: (eventData) =>
+      setStuff(
+        <p
+          style={{
+            fontSize: "100px",
+            position: "absolute",
+            left: 1000,
+            right: 500,
+          }}
+        >
+          {eventData.dir}!!
+        </p>
+      ),
     swipeDuration: 500,
     preventScrollOnSwipe: true,
     trackMouse: true,
@@ -47,7 +75,9 @@ export default function Swipe() {
   return (
     <div className="swipe-body">
       <Navbar color="blue"></Navbar>
-
+      <h3 style={{ fontSize: "30px", color: "#232323", textAlign: "center" }}>
+        Click to swipe
+      </h3>
       <div className="swipe-content" {...handlers}>
         <div className="left-arrow">
           <div className="arrow">←</div>This is not my pet
@@ -64,7 +94,7 @@ export default function Swipe() {
           <div className="arrow">→</div>This is my pet!
         </div>
       </div>
-
+      {testingStuffLol}
       <Footer></Footer>
     </div>
   );

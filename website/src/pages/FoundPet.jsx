@@ -25,7 +25,6 @@ function FoundPet() {
       <div className="found-form">
         <form
           className="foundnp-species"
-          getValue={(e) => setSpecie(e.currentTarget.value)}
           method="POST"
           action="/Profile/found-pet"
         >
