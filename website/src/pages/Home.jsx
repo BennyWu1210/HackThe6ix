@@ -16,7 +16,7 @@ function Home() {
           <div className="home-title">Find Your Perfect Match</div>
           <div className="home-content">
             Dog Tinder is a website for fellow pet owners to find their missing
-            pets from the generosity of other friends 💛
+            pets through the generosity of other friends 💛
           </div>
         </div>
       </div>
@@ -37,44 +37,31 @@ function Home() {
           <Card
             name="Vivian Dai"
             text="100% Recommend! Found my dog within 2 hours of reporting!"
-            image={require("../images/Pet1.jpg")}
+            image={require("../images/vivian-dachshund.jpg")}
             isMoving="true"
           />
           <Card
             name="Benny Wu"
             text="I was so worried after losing my goldfish Ben Jr. while taking him on a walk! Luckily Furry Finder helped me locate Ben Jr. immediately!"
-            image={require("../images/Pet1.jpg")}
+            image={require("../images/goldfish-tank.jpg")}
             isMoving="true"
           />
           <Card
             name="Rainbow Huang"
             text="Found my whore slut bitch ass dog with Furry Finder #mydogisacat"
-            image={require("../images/Pet1.jpg")}
+            image={require("../images/rainbow-and-lobster.jpg")}
             isMoving="true"
           />
           <Card
             name="Claire Wang"
             text="My parents used this service to find me"
-            image={require("../images/Pet1.jpg")}
+            image={require("../images/Wang_Claire.png")}
             isMoving="true"
           />
           <Card
             name="Lala"
             text="I literally have skin cancer"
-            image={require("../images/Pet1.jpg")}
-            isMoving="true"
-          />
-          <Card
-            name="Lala"
-            text="I literally have skin cancer"
-            image={require("../images/Pet1.jpg")}
-            isMoving="true"
-          />
-          <Card
-            name="Claire Wang"
-            text="Thanks to Rainbow Huang I was able to reunite with my beloved
-                  Spiky the Hedgehog in less than 69 hours after his first disappearance!"
-            image={require("../images/Pet1.jpg")}
+            image={require("../images/lala.jpg")}
             isMoving="true"
           />
         </div>
