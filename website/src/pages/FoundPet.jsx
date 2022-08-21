@@ -69,12 +69,12 @@ function FoundPet() {
           <br></br>
           <input type="submit"></input>
         </form>
+        <img
+          src={require("../images/Pet5.gif")}
+          alt="cute dog"
+          className="found-gif"
+        />
       </div>
-      <img
-        src={require("../images/Pet5.gif")}
-        alt="cute dog"
-        className="found-gif"
-      />
     </div>
   );
 }
