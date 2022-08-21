@@ -23,19 +23,20 @@ def return_matches(pet_des: str) -> list:
     pet_parsed = json.loads(pet_des)
     if (("size" in pet_parsed.keys()) and ("colour" in pet_parsed.keys()) and ("animal" in pet_parsed.keys())):
         for pet in missing_pets:
-            if (pet_parsed["size"] == pet.size) \
-                and (
-                    abs(pet_parsed["colour"][0] - pet.colour[0]) < 50 \
-                    and abs(pet_parsed["colour"][1] - pet.colour[1]) < 50 \
-                    and abs(pet_parsed["colour"][2] - pet.colour[2]) < 50 \
-                ) \
-                and (pet_parsed["animal"] == pet.animal):
-                    possible_pets.append(pet)
+            print(pet_parsed["colour"].split(" ")[0], pet.colour.split(" ")[0])
+            if (pet_parsed["size"] == pet.size) and ( \
+            abs(int(pet_parsed["colour"].split(" ")[0]) - int(pet.colour.split(" ")[0])) < 50 \
+            and abs(int(pet_parsed["colour"].split(" ")[1]) - int(pet.colour.split(" ")[1])) < 50 \
+            and abs(int(pet_parsed["colour"].split(" ")[2]) - int(pet.colour.split(" ")[2])) < 50 \
+            ) \
+            and (pet_parsed["animal"] == pet.animal):
+                possible_pets.append(pet)
     return possible_pets # returns the class of pets
 
 def get_pet_imgs(pet_des: str) -> list:
     pets = return_matches(pet_des)
     pet_imgs = []
+    print(pets)
     for pet in pets:
         pet_imgs.append(pet.image)
     return pet_imgs
