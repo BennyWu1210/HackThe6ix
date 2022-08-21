@@ -55,7 +55,7 @@ function LostPet() {
         </form>
         <img
           src={require("../images/Pet4.gif")}
-          alt="cute dog"
+          alt="cute giraffe"
           className="lost-gif"
         />
       </div>
