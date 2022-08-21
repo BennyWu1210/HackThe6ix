@@ -78,10 +78,14 @@ export default function Swipe() {
       <h3 style={{ fontSize: "30px", color: "#232323", textAlign: "center" }}>
         Click to swipe
       </h3>
+
       <div className="swipe-content" {...handlers}>
-        <div className="left-arrow">
-          <div className="arrow">←</div>This is not my pet
+        
+        <div className="left-side">
+          <p className="left-arrow">←</p>
+          <p className="left-desc">This is not my pet</p>
         </div>
+
         <div className="image">
           <Card
             name="Breed"
@@ -90,9 +94,12 @@ export default function Swipe() {
             isMoving="false"
           />
         </div>
-        <div className="right-arrow">
-          <div className="arrow">→</div>This is my pet!
+        
+        <div className="right-side">
+          <p className="right-arrow">→</p>
+          <p className="right-desc">This is my pet!</p>
         </div>
+      
       </div>
       {testingStuffLol}
       <Footer></Footer>
