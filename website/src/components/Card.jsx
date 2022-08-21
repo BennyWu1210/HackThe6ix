@@ -1,9 +1,9 @@
 import React from "react";
 import "./Card.css";
 
-function Card({ image, text, name }) {
+function Card({ image, text, name, isMoving }) {
   return (
-    <div className="card-container">
+    <div className={`card-container-${isMoving}`}>
       <div className="card-image">
         <img src={image} />
       </div>
