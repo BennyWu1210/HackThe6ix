@@ -1,3 +1,8 @@
+.found-form{
+	display: flex;
+	justify-content: space-between;
+}
+
 .found-species-text{
 	font-size: 25px;
   font-weight: 400;
@@ -11,4 +16,8 @@
 .found-image{
 	width: 300px;
 	border-radius: 10px;
+}
+
+.found-gif{
+  width: 300px;
 }

@@ -41,23 +41,23 @@ function LostPet() {
             />
           )}
           <br />
-          <input type="submit" />
-        </form>
-        <form className="lost-species">
           <p className="lost-species-text">What breed is the pet?</p>
           <input
             style={{ height: "30px", borderRadius: "10px" }}
             onChange={(e) => setBreed(e.currentTarget.value)}
           />
-        </form>
-        <form className="lost-species">
           <p className="lost-species-text">What color is the pet?</p>
-          <input type="color" name="colour"></input>
-        </form>
-        <form className="lost-species">
+          <input type="color" name="colour" />
           <p className="lost-species-text">Upload an image (optional)</p>
-          <input type="file" name="colour"></input>
+          <input type="file" />
+          <br />
+          <input type="submit" className="lost-button" />
         </form>
+        <img
+          src={require("../images/Pet4.gif")}
+          alt="cute giraffe"
+          className="lost-gif"
+        />
       </div>
     </div>
   );
