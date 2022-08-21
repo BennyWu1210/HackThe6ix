@@ -6,7 +6,7 @@ import Card from "../components/Card";
 import { useSwipeable } from "react-swipeable";
 import "./Swipe.css";
 
-export default function Swipe() {
+export default function Swipe({ imgs }) {
   // let touchStart = 0;
   // let touchEnd = 0;
   // let whyIsThereVirtualDebouncingThisIsDumb = 0;

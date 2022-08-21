@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, redirect, render_template, request, send_from_directory
 import pet_finder
 from misc import conversions
 from werkzeug.utils import secure_filename
@@ -20,6 +20,7 @@ def lost_pet() -> str:
     bruh = f"{{\"size\": \"{size}\", \"colour\": \"{colour}\", \"animal\": \"{animal}\"}}"
     images = pet_finder.matcher.get_pet_imgs(bruh)
     print(request.form)
+    return redirect(f"/Swipe?imgs={images}")
     return f"{images}" # TODO: deal with this lolololol
 
 @app.route("/Profile/found-pet", methods=["POST"])
