@@ -1,12 +1,24 @@
-.card-container{
+.card-container-false{
   margin: 20px;
   height: 450px;
   width: 300px;
-  transform: translateX(100%);
-  animation: move 30s linear infinite;
   display: flex;
   flex-direction: column;
 }
+
+.card-container-true{
+  margin: 20px;
+  height: 450px;
+  width: 300px;
+  display: flex;
+  transform: translateX(100%);
+  animation: move 30s linear infinite;
+  flex-direction: column;
+}
+
+
+
+
 
 img{
   width: 100%;
@@ -31,12 +43,12 @@ img{
   vertical-align: center;
 }
 
-/* @keyframes move {
+@keyframes move {
   from {
     transform: translateX(100%);
   }
   to{
     transform: translateX(-100%);
   }
-} */
+}
 
